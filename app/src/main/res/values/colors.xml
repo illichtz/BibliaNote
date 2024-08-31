@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="highlight_color">#FFFF00</color> <!-- Bright Yellow -->
+    <color name="text_primary">#000000</color> <!-- Black for light theme -->
+    <color name="old_testament_background">#8FBC8F</color>
+    <color name="new_testament_background">#ADD8E6</color>
+    <color name="text_color_primary">#000000</color>
+    <color name="icon_color">#000000</color> <!-- Black -->
+
+    <color name="toolbar_text_color">#000000</color> <!-- Black for light mode -->
+    <color name="menu_icon_color">#000000</color> <!-- Black for light mode -->
+    <color name="toolbar_icon_color">#000000</color> <!-- Black for light mode -->
+
+    <color name="button_active_text_color">#000000</color> <!-- Black for active button -->
+    <color name="button_inactive_text_color">#000000</color> <!-- Pink for inactive button -->
+
+    <color name="dark">#141118</color>
+    <color name="light">#FEF7FF</color>
+
+</resources>

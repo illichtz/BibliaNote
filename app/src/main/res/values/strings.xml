@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BibliaNote</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="search_hint">search hint</string>
+    <string name="language">Language</string>
+
+    <string name="add_note">New Note</string>
+    <string name="create_new_note">Create a new note</string>
+<string name="settings">settings</string>
+</resources>

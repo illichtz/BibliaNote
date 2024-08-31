@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/note_nav_graph"
+    app:startDestination="@id/notesFragment">
+
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.a101apps.biblianote.notebook.NotesFragment"
+        android:label="Notes">
+        <action
+            android:id="@+id/action_notesFragment_to_notebookFragment"
+            app:destination="@id/notebookFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/notebookFragment"
+        android:name="com.a101apps.biblianote.notebook.NoteBookFragment"
+        android:label="Note">
+        <argument
+            android:name="noteId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_notebookFragment_to_verseFragment"
+            app:destination="@id/verseFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.a101apps.biblianote.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/verseFragment"
+        android:name="com.a101apps.biblianote.biblia.VerseFragment"
+        android:label="Verse">
+        <argument
+            android:name="bookNumber"
+            app:argType="integer" />
+        <argument
+            android:name="chapterNumber"
+            app:argType="integer" />
+        <argument
+            android:name="bookName"
+            app:argType="string" />
+        <argument
+            android:name="verseNumber"
+            app:argType="integer"
+            android:defaultValue="-1" /> <!-- Default value indicating no specific verse -->
+    </fragment>
+
+</navigation>

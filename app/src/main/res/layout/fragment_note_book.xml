@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/editTextNoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:text="Note Title"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:hint="Title ..."
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="textCapSentences"/>
+
+    <jp.wasabeef.richeditor.RichEditor
+        android:id="@+id/editor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSemicolon"
+                style="@style/ToolButtonStyle"
+                android:text=":" />
+
+            <Button
+                android:id="@+id/btnBold"
+                style="@style/ToolButtonStyle"
+                android:text="B" />
+
+            <Button
+                android:id="@+id/btnBulletList"
+                style="@style/ToolButtonStyle"
+                android:text="•" />
+
+            <Button
+                android:id="@+id/btnItalic"
+                style="@style/ToolButtonStyle"
+                android:text="I" />
+
+            <Button
+                android:id="@+id/btnUnderline"
+                style="@style/ToolButtonStyle"
+                android:text="U" />
+
+            <Button
+                android:id="@+id/btnNumberedList"
+                style="@style/ToolButtonStyle"
+                android:text="1." />
+
+            <Button
+                android:id="@+id/btnStrikethrough"
+                style="@style/ToolButtonStyle"
+                android:text="S" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

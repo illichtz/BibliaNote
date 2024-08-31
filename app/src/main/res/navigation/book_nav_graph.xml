@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/booksFragment">
+
+    <fragment
+        android:id="@+id/booksFragment"
+        android:name="com.a101apps.biblianote.biblia.BooksFragment"
+        android:label="Books">
+        <action
+            android:id="@+id/action_booksFragment_to_verseFragment"
+            app:destination="@id/verseFragment" />
+        <action
+            android:id="@+id/action_booksFragment_to_chaptersFragment"
+            app:destination="@id/chaptersFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chaptersFragment"
+        android:name="com.a101apps.biblianote.biblia.ChaptersFragment"
+        android:label="Chapters">
+        <argument
+            android:name="bookNumber"
+            app:argType="integer" />
+        <argument
+            android:name="bookName"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_chaptersFragment_to_verseFragment"
+            app:destination="@id/verseFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/verseFragment"
+        android:name="com.a101apps.biblianote.biblia.VerseFragment"
+        android:label="Verse">
+        <argument
+            android:name="bookNumber"
+            app:argType="integer" />
+        <argument
+            android:name="chapterNumber"
+            app:argType="integer" />
+        <argument
+            android:name="bookName"
+            app:argType="string" />
+        <argument
+            android:name="verseNumber"
+            app:argType="integer"
+            android:defaultValue="-1" /> <!-- Default value indicating no specific verse -->
+    </fragment>
+
+ </navigation>

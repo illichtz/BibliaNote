@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BibliaNote" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="colorOnPrimary">@color/toolbar_text_color</item>
+
+    </style>
+
+    <style name="ToolButtonStyle">
+        <item name="android:layout_width">70dp</item> <!-- Adjust this value as needed -->
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">?attr/colorAccent</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+</resources>
